@@ -45,10 +45,10 @@ on:
     branches: [ "main" ]
 
 env:
-  Solution_Name: your-solution-name               # Replace with your .sln file
-  Test_Project_Path: your-test-project-path       # Replace with test project path
-  Wap_Project_Directory: your-wap-folder          # Replace with your WAP folder
-  Wap_Project_Path: your-wap-folder\your.wapproj  # Replace with your .wapproj path
+  Solution_Name: ReportGenerator.sln               # Replace with your .sln file
+  Test_Project_Path: src/Tests/ReportGenerator.Core.Tests/ReportGenerator.Core.Tests.csproj       # Replace with test project path
+  Wap_Project_Directory: src/ReportGenerator.Package         # Replace with your WAP folder
+  Wap_Project_Path: src/ReportGenerator.Package/ReportGenerator.Package.wapproj  # Replace with your .wapproj path
 
 jobs:
 
