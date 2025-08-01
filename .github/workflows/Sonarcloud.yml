@@ -98,9 +98,9 @@ jobs:
 
         run: |
 
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"sumanbdev_ExpressedRealms" /o:"sumanbdev" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"sumanbdev_ReportGenerator" /o:"sumanbdev" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
 
-          dotnet build ./api/ExpressedRealms.sln
+          dotnet build ./api/ReportGenerator.sln
 
           dotnet-coverage collect "dotnet test ./api --no-restore" -f xml -o "coverage.xml"
 
