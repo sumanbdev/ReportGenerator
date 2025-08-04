@@ -103,7 +103,7 @@ jobs:
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_SCANNER_OPTS: >
-          -Dsonar.projectKey=sumanbdev_desktopapp
+          -Dsonar.projectKey=sumanbdev_ReportGenerator
           -Dsonar.organization=sumanbdev
           -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.cs.opencover.reportsPaths=**/TestResults/coverage/coverage.cobertura.xml
